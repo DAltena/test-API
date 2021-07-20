@@ -1,15 +1,34 @@
 {
     "Image": {
-      "title": { "string": {} },
-      "url": { "string": {} },
-      "comments": {
-        "hasMany": "Comment"
-      }
+        "title": { "string": 
+            [
+                "Summer",
+                "Party",
+                "Fruit",
+                "Joy"
+            ]},
+        "description": { "string": 
+            [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin nibh at facilisis laoreet. Sed viverra elementum erat. Phasellus ullamcorper mollis elit a dignissim. Maecenas ultrices ante est, ut faucibus nibh laoreet sed. Integer et interdum quam, et feugiat purus. Pellentesque nisl nunc, ullamcorper id tortor non, consequat sodales nisi. Curabitur blandit dui vel ligula eleifend consequat. Donec nec consequat dolor, nec vulputate diam. Nam varius eu dui nec posuere. Nunc a mattis neque. Curabitur convallis sem eu lacinia dictum. Cras interdum commodo odio, id hendrerit sapien ultrices eu. Pellentesque viverra lobortis enim sed semper.",
+                "Integer malesuada odio risus, quis ornare odio aliquet eu. Morbi ligula est, convallis vel ante eu, efficitur auctor justo. Fusce rhoncus gravida nisi et finibus. Duis quis convallis magna. Suspendisse potenti. Donec nec arcu lacinia lacus mollis bibendum. Proin nec turpis vitae enim fermentum sodales ac ac orci. Mauris congue purus id augue consequat, sed molestie metus maximus. Donec a iaculis nisi, at luctus felis.",
+                "Sed a bibendum lectus, vitae pretium nulla. Morbi sit amet sem eget ex porta efficitur. Donec facilisis, diam eu scelerisque eleifend, lacus odio semper nunc, a tincidunt quam ligula eget odio. Proin suscipit lorem nec tristique rutrum. Quisque enim eros, mattis ut nulla in, cursus aliquam dui. Ut et purus eu urna pellentesque egestas. Etiam feugiat neque sed feugiat porttitor. Maecenas faucibus eleifend quam id placerat. Ut a augue vel lectus auctor commodo quis nec enim. Praesent lacinia felis neque, nec bibendum ipsum malesuada eu. Etiam vestibulum neque ullamcorper, luctus enim sed, sollicitudin velit. Sed finibus quam a velit blandit euismod.",
+                "Fusce id lobortis ex. Nam ac massa in ante accumsan ultricies ullamcorper id lacus. In non efficitur diam. Donec vel mattis enim. Donec placerat fringilla massa, sed gravida nibh commodo in. Ut tempor, lectus et aliquam tincidunt, justo eros egestas libero, non convallis turpis mi eget purus. Aliquam convallis purus sit amet leo fringilla, vel feugiat urna ultricies. In placerat velit eu sodales convallis."
+            ] },
+        "url": { "string": 
+            [
+                "https://image.shutterstock.com/z/stock-photo-fresh-citrus-seamles-fine-pattern-ripe-fruit-tangerines-trendy-sunlight-summer-pattern-made-with-1944594160.jpg",
+                "https://image.shutterstock.com/z/stock-photo-orange-sliced-sunglasses-on-a-blue-rustic-wood-background-summer-fruit-and-fashion-concept-614232944.jpg",
+                "https://image.shutterstock.com/z/stock-photo-fresh-fruits-background-slices-of-fresh-fruits-top-view-on-ice-566805751.jpg",
+                "https://image.shutterstock.com/image-photo/happy-cute-boy-learn-ride-600w-1341345131.jpg"
+            ] },
+        "comments": {
+            "hasMany": "Comment"
+        }
     },
     "Comment": {
       "body": { "string": {} },
       "post": {
-        "belongsTo": "Post"
+        "belongsTo": "Image"
       }
     }
   }
